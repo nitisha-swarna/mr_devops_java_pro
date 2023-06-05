@@ -1,0 +1,13 @@
+pipeline {
+    agent  any
+
+    stages {
+        stage('Git checkout') {
+            steps {
+                script {
+                    git branch: 'main' , url:  'https://github.com/nitisha-swarna/mr_devops_java_pro.git'
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ pipeline {
         stage('Git checkout') {
             steps {
                 script {
-                    git  url:  'https://github.com/nitisha-swarna/mr_devops_java_pro.git'
+                    git  'https://github.com/nitisha-swarna/mr_devops_java_pro.git'
                 }
             }
         }
